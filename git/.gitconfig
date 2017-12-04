@@ -1,0 +1,16 @@
+[user]
+	name = hiroshi
+	email = scnu20142005027@gmail.com
+
+[color]
+    ui = auto
+
+[alias]
+    cm = commit -m
+    cam = commit -am
+    lgs = log --oneline
+    lgv = log --graph --decorate
+    lgd = log -p
+
+[core]
+	editor = vim
