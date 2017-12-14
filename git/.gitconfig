@@ -1,6 +1,6 @@
 [user]
-	name = hiroshi
-	email = scnu20142005027@gmail.com
+    name = hiroshi
+    email = scnu20142005027@gmail.com
 
 [color]
     ui = auto
@@ -13,4 +13,4 @@
     lgd = log -p
 
 [core]
-	editor = vim
+    editor = vim

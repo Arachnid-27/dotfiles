@@ -12,17 +12,9 @@
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "ctrl+b",
-        "command": "-workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "-workbench.action.showAllSymbols"
-    },
-    {
         "key": "o",
         "command": "list.select",
-        "when": "explorerViewletVisible && filesExplorerFocus"
+        "when": "listFocus"
     },
     {
         "key": "ctrl+j",
@@ -37,6 +29,21 @@
     {
         "key": "f4",
         "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.focusSideBar",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "listFocus"
+    },
+    {
+        "key": "p",
+        "command": "list.focusFirstChild",
+        "when": "listFocus"
     },
 
     // ctrl+c -> esc
@@ -103,8 +110,41 @@
         "when": "problemFocus"
     },
     {
-        "key": "ctrl+c",
-        "command": "-filesExplorer.copy",
-        "when": "explorerViewletVisible && filesExplorerFocus"
+        "key": "ctrl+0",
+        "command": "-workbench.action.focusSideBar"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+k ctrl+w",
+        "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "ctrl+k w",
+        "command": "-workbench.action.closeEditorsInGroup"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "escape",
+        "command": "-list.clear",
+        "when": "listFocus"
     }
 ]
