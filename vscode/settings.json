@@ -1,5 +1,7 @@
 {
     "editor.fontSize": 16,
+    "editor.renderWhitespace": "boundary",
+    "explorer.openEditors.visible": 0,
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "files.autoGuessEncoding": true,
@@ -8,7 +10,7 @@
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
-    "vim.leader": ";",
+    "vim.leader": " ",
     "vim.otherModesKeyBindingsNonRecursive": [
         {
             "before": ["<leader>","d"],
@@ -53,11 +55,11 @@
         "<C-a>": false,
         "<C-t>": false,
         "<C-f>": false,
-        "<C-w>": false
+        "<C-w>": false,
+        "<C-d>": true,
+        "<C-u>": true
     },
+    "git.enableSmartCommit": true,
+    "trailing-spaces.saveAfterTrim": true,
     "workbench.iconTheme": "material-icon-theme",
-    "php.validate.executablePath": "C:/php/php.exe",
-    "terminal.integrated.shell.windows": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
-    "terminal.external.windowsExec": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
-    //    "http.proxy": "127.0.0.1:1080"
 }

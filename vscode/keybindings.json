@@ -1,5 +1,5 @@
 [
-    { 
+    {
         "key": "ctrl+p",
         "command": "workbench.action.previousEditor"
     },
@@ -14,7 +14,7 @@
     {
         "key": "o",
         "command": "list.select",
-        "when": "listFocus"
+        "when": "listFocus && !inputFocus"
     },
     {
         "key": "ctrl+j",
@@ -43,7 +43,16 @@
     {
         "key": "p",
         "command": "list.focusFirstChild",
-        "when": "listFocus"
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "trailing-spaces.deleteTrailingSpaces",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+u",
+        "command": "sftp.trans.remote"
     },
 
     // ctrl+c -> esc
@@ -146,5 +155,15 @@
         "key": "escape",
         "command": "-list.clear",
         "when": "listFocus"
-    }
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+d",
+        "command": "-editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
 ]
