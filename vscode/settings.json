@@ -11,11 +11,7 @@
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
     "vim.leader": " ",
-    "vim.otherModesKeyBindingsNonRecursive": [
-        {
-            "before": ["<leader>","d"],
-            "after": ["d", "d"]
-        },
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["<leader>", "x"],
             "after": [],
@@ -53,13 +49,40 @@
     ],
     "vim.handleKeys": {
         "<C-a>": false,
+        "<C-b>": false,
         "<C-t>": false,
         "<C-f>": false,
         "<C-w>": false,
+        "<C-h>": false,
+        "<C-q>": false,
+        "<C-e>": false,
+        "<C-j>": false,
+        "<C-k>": false,
+        "<C-i>": false,
         "<C-d>": true,
         "<C-u>": true
     },
+    "todohighlight.keywords": [
+        {
+            "text": "NOTE:",
+            "color": "white",
+            "backgroundColor": "green"
+        },
+        {
+            "text": "COMMENT:",
+            "color": "white",
+            "backgroundColor": "blue"
+        },
+        {
+            "text": "WHY:",
+            "color": "white",
+            "backgroundColor": "purple"
+        }
+    ],
     "git.enableSmartCommit": true,
     "trailing-spaces.saveAfterTrim": true,
+    "php.suggest.basic": true,
     "workbench.iconTheme": "material-icon-theme",
+    "gitlens.codeLens.recentChange.enabled": false,
+    "workbench.list.keyboardNavigation": "filter"
 }
